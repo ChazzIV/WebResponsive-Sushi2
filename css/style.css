@@ -35,6 +35,9 @@ header{
     position: relative;
 }
 
+.btn-menu {
+    display: none;
+}
 
 .enlaces-header a {
     color: #fff;
@@ -48,8 +51,18 @@ header{
 .enlaces-header a:hover{
     text-decoration: underline;
 }
+
+.search {
+    padding-top: 35px;
+}
+
 .search i {
     color: #fff;
+}
+
+.links {
+    display: flex;
+    padding-right: 500px;
 }
 
 .nav{
@@ -278,7 +291,7 @@ header{
 }
 
 .circulo {
-    width: 15%;
+    width: 200px;
     background: #ff7f7f;
     margin-bottom: 30px;
     border-radius: 50%;
@@ -566,6 +579,39 @@ footer{
     header {
         background-attachment: inherit;
     }
+
+    .btn-menu {
+        position: absolute;
+        right: 30px;
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .enlaces-header {
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #ff7f7f;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces-header a {
+        margin: 10px;
+        font-size: 3rem;
+    }
+
+    .links { 
+        flex-direction: column;
+        font-size: 4rem;
+        padding: 0;
+    }
+
     .textos-header h1 {
         text-align: center;
     }
@@ -632,6 +678,15 @@ footer{
         display: none;
     }
 
+    .d-icon2 {
+        left: 130px;
+    }
+
+    .d-icon4 {
+        top: -25px;
+        left: 240px;
+    }
+
     .d-icon1 {
         display: none;
     }
@@ -653,6 +708,14 @@ footer{
 
     .cheff p {
         font-size: 18px;
+    }
+
+    .cheff h1 {
+        font-size: 32px;
+    }
+
+    .grupo6 {
+        background-size: contain;
     }
 
     input[type="submit"] {
